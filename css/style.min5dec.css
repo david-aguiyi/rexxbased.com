@@ -1341,12 +1341,12 @@ h6 {
     line-height: normal
 }
 
-.tokenomics {
+.tokenomics, .swap {
     position: relative;
     background-color: #5380f7
 }
 
-.tokenomics__title {
+.tokenomics__title, .swap__title {
     text-align: center
 }
 
@@ -1607,7 +1607,7 @@ h6 {
         opacity: 0;
         visibility: hidden
     }
-    .tokenomics__content {
+    .tokenomics__content, .swap__container {
         padding-left: 2.5rem
     }
     .tokenomics__content._watcher-view .tokenomics__item:nth-child(1) {
@@ -1731,10 +1731,10 @@ h6 {
     .page__roadmap {
         padding-bottom: 4.375rem
     }
-    .page__tokenomics {
+    .page__tokenomics, .page__swap {
         padding-top: 3.75rem
     }
-    .page__tokenomics {
+    .page__tokenomics, .page__swap {
         padding-bottom: 10rem
     }
     .hero__container {
@@ -1830,7 +1830,7 @@ h6 {
     .roadmap__item-text {
         font-size: 1.25rem
     }
-    .tokenomics__title {
+    .tokenomics__title, .swap__title {
         margin-bottom: 3.75rem
     }
     .tokenomics__items {
@@ -1931,10 +1931,10 @@ h6 {
     .page__roadmap {
         padding-bottom: 1.875rem
     }
-    .page__tokenomics {
+    .page__tokenomics, .page__swap {
         padding-top: 1.875rem
     }
-    .page__tokenomics {
+    .page__tokenomics, .page__swap {
         padding-bottom: 2.5rem
     }
     .hero__container {
@@ -2015,7 +2015,7 @@ h6 {
     .roadmap__item-text {
         font-size: 1.125rem
     }
-    .tokenomics__title {
+    .tokenomics__title, .swap__title {
         margin-bottom: 1.875rem
     }
     .tokenomics__items {
@@ -2840,28 +2840,28 @@ h6 {
     @supports (padding-top:clamp(1.875rem,
     1.4169847328rem+2.2900763359vw,
     3.75rem)) {
-        .page__tokenomics {
+        .page__tokenomics, .page__swap {
             padding-top: clamp(1.875rem, 1.4169847328rem + 2.2900763359vw, 3.75rem)
         }
     }
     @supports not (padding-top:clamp(1.875rem,
     1.4169847328rem+2.2900763359vw,
     3.75rem)) {
-        .page__tokenomics {
+        .page__tokenomics, .page__swap{
             padding-top: calc(1.875rem + 1.875 * (100vw - 20rem)/ 81.875)
         }
     }
     @supports (padding-bottom:clamp(2.5rem,
     0.6679389313rem+9.1603053435vw,
     10rem)) {
-        .page__tokenomics {
+        .page__tokenomics, .page__swap {
             padding-bottom: clamp(2.5rem, .6679389313rem + 9.1603053435vw, 10rem)
         }
     }
     @supports not (padding-bottom:clamp(2.5rem,
     0.6679389313rem+9.1603053435vw,
     10rem)) {
-        .page__tokenomics {
+        .page__tokenomics, .page__swap {
             padding-bottom: calc(2.5rem + 7.5 * (100vw - 20rem)/ 81.875)
         }
     }
@@ -3120,14 +3120,14 @@ h6 {
     @supports (margin-bottom:clamp(1.875rem,
     1.4169847328rem+2.2900763359vw,
     3.75rem)) {
-        .tokenomics__title {
+        .tokenomics__title, .swap__title {
             margin-bottom: clamp(1.875rem, 1.4169847328rem + 2.2900763359vw, 3.75rem)
         }
     }
     @supports not (margin-bottom:clamp(1.875rem,
     1.4169847328rem+2.2900763359vw,
     3.75rem)) {
-        .tokenomics__title {
+        .tokenomics__title, .swap__title{
             margin-bottom: calc(1.875rem + 1.875 * (100vw - 20rem)/ 81.875)
         }
     }
